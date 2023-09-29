@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <header class="hr-styled">
+        <h1>Explore the World with Us</h1>
+        <p>Your Gateway to Unforgettable Adventures</p>
+    </header>
+
+   
+    <section id="featured-destinations">
+        <h1>Featured Destinations</h1>
+        <div class="destination">
+            <img src="paris.jpg" alt="Paris">
+            <div class="content-below-image">
+                <h3 class="destination-title">Paris, France</h3>
+                <p class="destination-description">Experience the romance of the City of Light. Paris is known for its iconic landmarks...</p>
+                <a href="#" class="cta-button">Explore More</a>
+            </div>
+        </div>
+        
+        <div class="destination">
+            <img src="tokyo.jpg" alt="Tokyo">
+            <div class="content-below-image">
+                <h3 class="destination-title">Tokyo, Japan</h3>
+                <p class="destination-description">Discover the blend of tradition and modernity in Tokyo. The city offers a unique...</p>
+                <a href="#" class="cta-button">Explore More</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to the International Travel Agency, where we make your travel dreams come true. Our experienced team is dedicated to providing you with the best travel experiences around the globe.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Customized Tours</h3>
+            <p>We create tailor-made tours to suit your preferences and interests.</p>
+        </div>
+        <div class="service">
+            <h3>Expert Guides</h3>
+            <p>Explore each destination with knowledgeable and friendly guides.</p>
+        </div>
+        <div class="service">
+            <h3>24/7 Support</h3>
+            <p>Our team is available around the clock to assist you during your travels.</p>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial">
+            <p>"An amazing experience! The attention to detail and personalized service made our trip unforgettable. Highly recommended!"</p>
+            <p>- John and Mary, USA</p>
+        </div>
+        <div class="testimonial">
+            <p>"The International Travel Agency exceeded our expectations. We can't wait to book our next adventure with them."</p>
+            <p>- Sarah, Australia</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <p>Ready to embark on your next adventure? Contact us now!</p>
+        <a href="mailto:info@travelagency.com">info@travelagency.com</a>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form></div>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2023 International Travel Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

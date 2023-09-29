@@ -1,0 +1,290 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.hr-styled{
+    border: none;
+    margin: 5px 0;
+    
+}
+
+/* Header */
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Main Sections */
+section {
+    padding: 40px 20px;
+}
+
+h1{
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px; 
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Featured Destinations */
+
+/* Styling for Destination Titles */
+.destination-title {
+    color: #3498db;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Styling for Destination Descriptions */
+.destination-description {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#featured-destinations {
+    background-color: #3498db;
+    padding: 40px 20px;
+}
+
+.destination {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover {
+    transform: translateY(-5px);
+}
+
+.destination img {
+    width: 100%;
+    min-height: 200px; /* Set a minimum height to avoid blurriness */
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    image-rendering: -webkit-optimize-contrast; /* Webkit browsers */
+    image-rendering: optimizeQuality;
+}
+
+.destination h3 {
+    color: #3498db;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.destination p {
+    color: #666;
+    font-size: 1.1em;
+    padding: 0 20px 20px;
+}
+
+/* Optional: Add some spacing between destinations */
+.destination + .destination {
+    margin-top: 20px;
+}
+
+/* Content Below Image */
+.content-below-image {
+    background-color: #fff; /* Background color for the content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: -20px; /* Adjust margin for better visual alignment with the image */
+}
+
+.content-below-image h3 {
+    color: #3498db;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.content-below-image p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Example: Additional Styling for a Call-to-Action Button */
+.content-below-image .cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.content-below-image .cta-button:hover {
+    background-color: #217dbb;
+}
+
+
+/* About Us */
+#about-us {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+#about-us h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+
+
+
+/* Our Services */
+#services {
+    background-color: #f9f9f9;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #3498db;
+}
+
+/* What Our Clients Say */
+#testimonials {
+    background-color: #3498db;
+    color: black;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.testimonial {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial p:last-child {
+    margin-top: 10px;
+}
+
+
+/* Contact Us */
+#contact {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+#contact h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#contact a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Contact Form Styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+form button {
+    background-color: #fff;
+    color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
