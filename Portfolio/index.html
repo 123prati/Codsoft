@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Prati Sanghvi</h1>
+        <p>Front-end Developer & Data Analyst</p>
+    </header>
+    <section id="about">
+        <h2>About Me</h2></a>
+        <p>,<strong>I am very enthusiastic and determined person.
+            I am currently pursuing computer engineering in Marwadi University, Rajkot.
+            I desire to be data analyst and a front end web developer and put in my contribution
+            for well known organisation.
+            This perfectly aligns with my career goals and would like to increase my expertise in
+            this field and be an exceptional asset to the organisation . </strong></p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1: Birthday-Invite</h3>
+            <p>A showcase of my skills and accomplishments, built with HTML, CSS, and a touch of creativity.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2: Movie-Ranking</h3>
+            <p>A showcase of my skills and accomplishments, built with HTML, CSS, and a touch of creativity.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3: Temperature Converter</h3>
+            <p>A simple web-based temperature converter that allows you to convert temperatures between Celsius, Fahrenheit, and Kelvin.</p>
+        </div>
+        <div class="project-card">
+           <h3>Project 4: Netfix Clone</h3>
+            <p>A Netflix clone homepage, created using HTML and CSS, replicates the visual appearance and layout of the actual Netflix homepage. This simplified Netflix clone homepage is created for aesthetic purposes and does not provide actual streaming or user account functionality. It serves as a visual representation of how the Netflix homepage is structured and styled using HTML and CSS.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 5: Calculator</h3>
+            <p>The Calculator app is a user-friendly tool designed for performing basic arithmetic calculations. With a clean and intuitive interface, users can easily add, subtract, multiply, and divide numbers. It includes essential features like percentage calculations, parentheses for complex expressions, and a backspace button for correcting input. The app is responsive and provides a straightforward solution for quick and accurate calculations.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 6: Weather App</h3>
+            <p>The Weather app is a handy tool for checking the current weather conditions of any location. Users can simply enter a city or ZIP code, and the app makes asynchronous requests to a weather API to fetch real-time data. The weather display includes essential information such as temperature, humidity, wind speed, and a brief weather description. The app also offers the flexibility to switch between temperature units (Celsius and Fahrenheit) and, optionally, uses geolocation to provide weather information for the user's current location. With error handling and a visually appealing design, it ensures a seamless and informative weather-checking experience.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Data Analysis</li>
+            <li>Front-end Development</li>
+           
+        </ul>
+    </section>
+    <button id="downloadButton">Download Resume</button>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Tel: 97732400694</p>
+        <p>Email: prati3171@gmail.com</p>
+        <p>Address:</p>
+        <p>
+         University Road,<br />
+          Navrang Apartment,<br />
+          Rajkot. <br />
+        </p>
+    </section>
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', () => {
+            const pdf = new jsPDF();
+            
+            pdf.fromHTML(document.body, 15, 15);
+    
+            
+            pdf.save('Prati_resume.pdf');
+        });
+    </script>
+    
+</body>
+</html>
